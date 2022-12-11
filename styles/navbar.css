@@ -1,0 +1,47 @@
+@media (max-width: 1000px){
+  header{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  #home .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:no-button{
+    content: "\f00d";
+  }
+  #menu{
+    top: 80px;
+    left: -100%;
+    background: #292c2f;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+
+    position: absolute;
+    right: 0;
+    top: 80px;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  #menu li{
+    width: 100%;
+  }
+  #menu li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  #menu li a:active,#menu li a:hover{
+    background: none;
+    color: cyan;
+  }
+}

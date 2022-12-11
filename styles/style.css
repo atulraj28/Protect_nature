@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+div, section, span, ul, li, a, header, footer{
+    box-sizing: border-box;
+}
+
+/*css reset*/
+
+header{
+    background: #292c2f;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+}
+#logo{
+    text-decoration: none;
+}
+#logo h3 span:hover{
+    color: green;
+}
+#logo h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+#logo h3 span{
+	color:  #5383d3;
+}
+
+#menu li{
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+#menu li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+#menu li a:active,#menu li a:hover{
+    color: #111;
+    background: #fff;
+}
+#home .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+input[type="checkbox"]{
+    display: none;
+  }
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+#home{
+   background-color: #59405C;
+}
+
+#gallery{
+     background-color: #ED6663;
+}
+
+#work{
+     background-color: #B52B65;
+}
+
+#contact{
+     background-color: #3C2C3E;
+}
+
+#about{
+     background-color: #B52B65;
+}
+#footer{
+    height: fit-content;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+
+
+
+
+
+
