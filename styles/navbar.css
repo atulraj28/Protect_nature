@@ -4,44 +4,88 @@
   }
 }
 @media (max-width: 920px) {
-  #home .menu-btn i{
-    display: block;
+  #toggle
+  {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      /* background: blue; */
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
-  #click:checked ~ .menu-btn i:no-button{
-    content: "\f00d";
+  #toggle::before{
+      content: '';
+      /* content: ''; */
+      position:absolute;
+      width: 28px;
+      height: 2px;
+      background: white;
+      transform: translate(-5px);
+      transition: 0.2s;
   }
+  #toggle::after{
+      content: '';
+      position:absolute;
+      width: 28px;
+      height: 2px;
+      background:white;
+      /* transform:translate(5px); */
+      /* transform: translateY(5px); */
+      transform: translateY(6px);
+      transition: 0.2s;
+  }
+  #toggle.active::before{
+      transform: translate(0px) rotate(45deg);
+  }
+  #toggle.active::after{
+      transform: translate(0px) rotate(-45deg);
+  }
+  
+  
+  
+  
+  
   #menu{
-    top: 80px;
-    left: -100%;
-    background: #292c2f;
-    width: 100%;
-    height: fit-content;
-    text-align: center;
-    display: block;
-    transition: all 0.3s ease;
-
-    position: absolute;
-    right: 0;
-    top: 80px;
+      top: 80px;
+      left: -100%;
+      background: #292c2f;
+      width: 100%;
+      height: fit-content;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+  
+      position: absolute;
+      right: 0;
+      top: 80px;
   }
-  #click:checked ~ ul{
-    left: 0;
+  #menu.active{
+      left: 0px;
+  
   }
-  #menu li{
-    width: 100%;
+  #menu ul a{
+      
+      width: 100%;
+      /* margin-left: 100%; */
+      display: block;
+      font-size: 20px;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
   }
-  #menu li a{
-    width: 100%;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  #menu ul li{
+      list-style-type: none;
+      display: inline-block;
+      width: 100%;
+      padding: 10px 40px;
+  
   }
-  #click:checked ~ ul li a{
-    margin-left: 0px;
-  }
-  #menu li a:active,#menu li a:hover{
-    background: none;
-    color: cyan;
+  #menu ul li a:hover{
+      background: none;
+      color: cyan;
+  
   }
 }

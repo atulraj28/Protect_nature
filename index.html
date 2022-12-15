@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Protect Nature</title>
     <link
       rel="stylesheet"
@@ -15,32 +16,140 @@
     <link rel="stylesheet" href="styles/footerStyle.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/homeSection.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="styles/work.css">
+    <link rel="stylesheet" href="styles/review.css">
   </head>
 
   <body>
+    <header>
+      <a id="logo" href="#"><h3>Protect<span>Nature</span></h3></a>
+      <div id="toggle"></div>
+      </label>
+      
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </header>
+
     <section id="home">
-        <header>
-          <a id="logo" href="#"><h3>Protect<span>Nature</span></h3></a>
+      <div class="bg-image"></div>
 
-          <input type="checkbox" id="click">
-          <label for="click" class="menu-btn">
-          <i>&#x2261</i>
-          </label>
-
-          <ul id="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#work">Our Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About Us</a></li>
-          </ul>
-        </header>
-      <h1>This Is Home</h1>
+      <div class="bg-text">
+        <br><br><h2>Let's Protect</h2>
+        <br><br><h1 style="font-size:50px; color:#01BAEF;">This Planet</h1><br><br><br><br><br>
+        <h2>Because this is only one we got !</h2><br><br>
+        <Button><a href="#contact">Join Us</a></Button>
+      </div>
     </section>
-    <section id="gallery"><h1>This Is Gallery</h1></section>
-    <section id="work"><h1>This Is our work</h1></section>
-    <section id="contact"><h1>This Is Contact</h1></section>
-    <section id="about"><h1>This Is About Us</h1></section>
+
+    <section id="gallery">
+      <div style="text-align:center">
+        <h2>Our Gallery</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="E:\my projects\Protect_nature\images\mount.jpg" alt="mountain" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="E:\my projects\Protect_nature\images\mountain.jpg" alt="snow" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="E:\my projects\Protect_nature\images\animals.jpg" alt="zebra" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="E:\my projects\Protect_nature\images\single.jpg" alt="antilop" style="width:100%" onclick="myFunction(this);">
+        </div>
+        
+      </div>
+
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+    </section>
+
+
+    <section id="work">
+      <div style="text-align:center">
+        <h2>Our Work</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="content">
+              <a href="google.com"><img src="E:\my projects\Protect_nature\images\mount.jpg" alt="Mountains" style="width:100%"></a>
+            <h3>My Work</h3>
+            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <a href="google.com"><img src="E:\my projects\Protect_nature\images\mountain.jpg" alt="Lights" style="width:100%"></a>
+            <h3>My Work</h3>
+            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+          <a href="google.com"><img src="E:\my projects\Protect_nature\images\animals.jpg" alt="Nature" style="width:100%"></a>
+            <h3>My Work</h3>
+            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+              <a href="google.com"><img src="E:\my projects\Protect_nature\images\single.jpg" alt="Mountains" style="width:100%"></a>
+            <h3>My Work</h3>
+            <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="bg-img1">
+        <form action="#" class="formss">
+
+          <label for="name"><b>Your Name</b></label>
+          <input
+            type="name"
+            placeholder="Enter Your name"
+            name="name"
+            required
+          />
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label for="subject"><b>Subject</b></label>
+          <textarea
+            name="textarea"
+            id="subject"
+            cols="30"
+            rows="10"
+            placeholder="Provide Your Feedbacks Here"
+            required
+          ></textarea>
+
+          <button type="submit" class="btn11">Login</button>
+        </form>
+
+      </div>
+    </section>
+    <section id="about">
+      <h2 >About Us</h2><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.<br><br>
+      </span>
+      </p>
+      <button onclick="myFunction()" id="myBtn">Read more</button><br><br>
+  </section>
+
     <section id="footer">
       <footer class="footer-distributed">
         <div class="footer-left">
@@ -97,5 +206,54 @@
         </div>
       </footer>
     </section>
+
+
+
+    <script>
+      const toggle= document.getElementById('toggle');
+      const menu= document.getElementById('menu');
+
+      document.onclick=function(e){
+          if(e.target.id !=='menu' && e.target.id !=='toggle')
+          {
+          toggle.classList.remove('active');
+          menu.classList.remove('active');
+          }
+      }
+
+
+      toggle.onclick=function(){
+          toggle.classList.toggle('active');
+          menu.classList.toggle('active');
+      }
+
+      function myFunction(imgs) {
+     var expandImg = document.getElementById("expandedImg");
+     var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+     }
+
+
+     function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+  </script>
+
   </body>
 </html>

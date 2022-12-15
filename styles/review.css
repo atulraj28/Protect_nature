@@ -1,0 +1,63 @@
+#contact .bg-img1 {
+  /* The image used */
+  background-image: url("snake.jpg");
+  /* height: 100%; */
+  width: 100%;
+  /* min-height: 380px; */
+  /* max-height: 100%; */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+#contact .formss {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+  max-width: 40%;
+  padding: 16px;
+  background-color:white;
+}
+
+/* Full-width input fields */
+#contact input[type=text], #contact input[type=name] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+#contact textarea{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+#contact input[type=text]:focus, #contact input[type=name]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+#contact .btn11 {
+  background-color: #60d6e0;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+#contact .btn11:hover {
+  opacity: 1;
+}
+

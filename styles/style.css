@@ -9,7 +9,7 @@ html{
 
 body{
     font-size: 100%;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
 }
 
 div, section, span, ul, li, a, header, footer{
@@ -25,7 +25,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 20px 50px;
+    padding: 20px 20px 50px;
     align-items: center;
     position: fixed;
     z-index: 999;
@@ -72,9 +72,14 @@ header{
     cursor: pointer;
     display: none;
   }
-input[type="checkbox"]{
+input[type="checkbox"]
+{
     display: none;
-  }
+}
+
+.menu-btn i{
+    display: none;
+}
 section{
     width: 100%;
     float: left;
@@ -82,24 +87,26 @@ section{
     position: relative;
 }
 
-#home{
-   background-color: #59405C;
-}
+
 
 #gallery{
-     background-color: #ED6663;
+    background: linear-gradient(to bottom, #977a42 -3%, #ccffff 94%);
+     height: fit-content;
 }
 
 #work{
-     background-color: #B52B65;
+    background: linear-gradient(to bottom, #ccffff 3%, #630303 101%);
+     height: fit-content;
 }
 
 #contact{
-     background-color: #3C2C3E;
+    background-color: #3C2C3E;
+    height: fit-content;
 }
 
 #about{
-     background-color: #B52B65;
+     background-color: white;
+     height: fit-content;
 }
 #footer{
     height: fit-content;
